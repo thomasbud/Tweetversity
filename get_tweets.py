@@ -50,5 +50,5 @@ def handle_institution(institution_dataframe):
         grab_tweets(institution, handle)
 
 
-institution_dataframe = pandas.read_csv('institutions_twitter.csv', usecols=[2, 3])
+institution_dataframe = pandas.read_csv('institution_repository/institutions_twitter.csv', usecols=[2, 3])
 handle_institution(institution_dataframe)
