@@ -39,7 +39,7 @@ def export_tweets(institution, tweets):
 
     dataframe = pandas.json_normalize(tweets)
 
-    headers = ['created_at', 'full_text', 'id_str']
+    headers = ['created_at', 'full_text']
     dataframe.to_csv(output_file_name, columns=headers)
 
 
