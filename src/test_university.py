@@ -3,6 +3,7 @@ import pandas
 from src.naive_bayes import NaiveBayes
 from src.naive_bayes import Sentiments
 
+# Read csv file
 tweet_data = pandas.read_csv('../testdata.csv', encoding='ISO-8859-1')
 
 nb = NaiveBayes()
@@ -25,4 +26,5 @@ for i, row in test_data.iterrows():
     elif sentiment == Sentiments(1):
         negative += 1
 
-print("people find this university ", (positive / total) * 100, "% happy")
+print("---------------------------------------------------------------------------")
+print("This university has a positive sentiment percentage of", (positive / total) * 100, "%.")
