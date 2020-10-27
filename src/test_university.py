@@ -1,7 +1,7 @@
 import pandas
 
-from src.naive_bayes import NaiveBayes
-from src.naive_bayes import Sentiments
+from naive_bayes import NaiveBayes
+from naive_bayes import Sentiments
 
 # Read csv file
 tweet_data = pandas.read_csv('../testdata.csv', encoding='ISO-8859-1')
