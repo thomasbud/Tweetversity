@@ -3,14 +3,15 @@ import pandas
 from src.naive_bayes import NaiveBayes
 from src.naive_bayes import Sentiments
 
-tweet_data = pandas.read_csv('../testdata.csv')
+tweet_data = pandas.read_csv('../testdata.csv', encoding='ISO-8859-1')
 
 nb = NaiveBayes()
 nb.load_tweets(tweet_data)
 tweets = nb.tweets
 nb.train()
 
-test_data = pandas.read_csv('../tweet_repository/albany_medical_college.csv')
+# Possible university datasets may be found in tweet_repository folder
+test_data = pandas.read_csv('../tweet_repository/texas_a&m_university,_college_station.csv')
 positive = 0
 negative = 0
 total = 0

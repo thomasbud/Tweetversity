@@ -75,9 +75,10 @@ class NaiveBayes:
         return Sentiments(highest_score_index)
 
     def load_tweets(self, tweet_data):
+        print("Loading 400,000 tweets...This may take up to 5 minutes. Please be patient.")
         for i, row in tweet_data.iterrows():
-            tweet = row['Tweet']
-            label = row['Sentiment']
+            tweet = row['text']
+            label = row['target']
 
             parsed_tweet = tweet.lower().split()
 
