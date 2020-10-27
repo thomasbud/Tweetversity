@@ -11,4 +11,4 @@ Below, you may find instructions regarding how to find the sentiment associated 
 
 1. Cd into the src directory.
 2. Type 'python3 test_university.py' and results will be printed in the console.
-3. The default university is set to Texas A&M. If you wish to change this, type out the university csv file name on line 14 in test_university.py.
+3. The default university is set to Texas A&M. If you wish to change this, type out the university csv file name on line 15 in test_university.py.
