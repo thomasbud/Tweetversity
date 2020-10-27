@@ -1,9 +1,6 @@
 import copy
-import pandas
 import math
 from enum import IntEnum
-
-tweets = []
 
 
 class Sentiments(IntEnum):
@@ -13,15 +10,16 @@ class Sentiments(IntEnum):
 
 class NaiveBayes:
     def __init__(self):
+        self.tweets = []
         self.total_tweets = 0
         self.tweets_per_sentiment = {label: 0 for label in Sentiments}
         self.word_frequency_per_sentiment = {label: {} for label in Sentiments}
         self.total_unique_words = set()
         self.saved_word_frequency_per_sentiment = {label: {} for label in Sentiments}
 
-    def train(self, tweets):
-        self.total_tweets = len(tweets)
-        for document in tweets:
+    def train(self):
+        self.total_tweets = len(self.tweets)
+        for document in self.tweets:
             document_content = document[0]
             document_label = document[1]
 
@@ -88,11 +86,4 @@ class NaiveBayes:
             else:
                 label = Sentiments(int(0))
 
-            tweets.append((parsed_tweet, label))
-
-
-nb = NaiveBayes()
-tweet_data = pandas.read_csv('../testdata.csv')
-nb.load_tweets(tweet_data)
-nb.train(tweets)
-nb.predict("Hate sick!")
+            self.tweets.append((parsed_tweet, label))
