@@ -76,7 +76,7 @@ World Rank,Location,Institution,Handle,National Rank,Quality of Education,Alumni
 274,USA,Florida State University,floridastate,92,-,553,-,222,77.2
 1020,USA,Fordham University,FordhamNYC,225,-,200,-,1115,70.2
 1739,USA,Franklin & Marshall College,FandMCollege,325,111,894,-,-,66.8
-452,USA,George Mason University,"GeorgeMasonU",128,-,1358,237,471,74.7
+452,USA,George Mason University,GeorgeMasonU,128,-,1358,237,471,74.7
 302,USA,George Washington University,GWtweets,102,400,199,-,287,76.7
 214,USA,Georgetown University,Georgetown,76,334,54,-,313,78.4
 74,USA,Georgia Institute of Technology,georgiatech,42,289,166,42,111,83
@@ -84,7 +84,7 @@ World Rank,Location,Institution,Handle,National Rank,Quality of Education,Alumni
 511,USA,Georgia State University,GeorgiaStateU,143,-,670,-,490,74.1
 1949,USA,Gettysburg College,gettysburg,349,167,209,-,-,66
 1379,USA,Grinnell College,GrinnellCollege,275,50,-,-,-,68.3
-1703,USA,json_normalize,HamiltonCollege,322,73,448,-,-,66.9
+1703,USA,Hamilton College,HamiltonCollege,322,73,448,-,-,66.9
 1286,USA,Hampton University,_HamptonU,265,-,-,-,1224,68.7
 1,USA,Harvard University,Harvard,1,3,1,1,1,100
 575,USA,Haverford College,haverfordedu,156,18,-,-,1879,73.4
